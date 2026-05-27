@@ -28,7 +28,7 @@ compatibility: Universal
 
 **Do NOT ask the user to proceed to implement the feature**
 
-```markdown
+<prd-template>
 # PRD: {feature title}
 
 ## Problem Statement
@@ -99,4 +99,4 @@ Any additional context or future considerations. Put "None" if there aren't any 
 ## Related PRDs
 
 Links to existing PRDs that this document depends on or interacts with.
-```
+</prd-template>
