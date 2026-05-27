@@ -28,7 +28,7 @@ compatibility: Universal
 
 **Do NOT ask the user to proceed to implement the feature**
 
-````markdown
+```markdown
 ## Problem Statement
 
 The user's pain point and the "why" behind this feature.
@@ -45,7 +45,7 @@ Measurable goals that define "done" and "successful" (e.g., performance targets,
 
 A LONG, comprehensive list of user stories in the format:
 
-1. As an <actor>, I want <feature>, so that <benefit>
+1. As an {actor}, I want {feature}, so that {benefit}
 
 <user-story-example>
 1. As a mobile bank customer, I want to see balance on my accounts, so that I can make better informed decisions about my spending
@@ -90,8 +90,4 @@ Any additional context or future considerations.
 ## Related PRDs
 
 Links to existing PRDs that this document depends on or interacts with.
-
 ```
-
-```
-````
