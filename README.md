@@ -14,6 +14,7 @@ npx skills add antonioaguilar/skills
 
 | Name               | Description                                                                                                                                         |
 | :----------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bias-checker`     | Analyzes text or prompts for cognitive biases and provides a detailed report on findings, implications, and references.                             |
 | `flower-petal`     | Conducts a "Flower Petal" interview to identify core technology and map out potential applications (petals).                                        |
 | `good-cop-bad-cop` | Uncover the "truth" about a problem or project idea using a stark contrast in interrogation personas (aggressive vs. empathetic).                   |
 | `heilmeier`        | A problem discovery skill based on the Heilmeier Catechism to define problems clearly, justify approaches, and evaluate proposals.                  |
