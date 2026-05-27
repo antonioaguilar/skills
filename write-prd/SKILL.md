@@ -91,9 +91,9 @@ Any additional context or future considerations. Put "None" if there aren't any 
 
 ## Metrics
 
-**Feature Complexity**: Provide a complexity scale from 0 to 10 where 10 is very complex, and 0 is very simple
-**Effort Level**: Provide the effort level in developer effort scale / times / story points (where 1 point = one day at 8 hours)
-**Most Complex**: Outline the most complex feature / module or code section in this PRD and provide a summary
+- **Feature Complexity**: Provide a complexity scale from 0 to 10 where 10 is very complex, and 0 is very simple
+- **Effort Level**: Provide the effort level in developer effort scale / times / story points (where 1 point = one day at 8 hours)
+- **Most Complex**: Outline the most complex feature / module or code section in this PRD and provide a summary
 
 ## Related PRDs
 
