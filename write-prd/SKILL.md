@@ -9,7 +9,7 @@ compatibility: Universal
 
 2. **Systematic Gathering**: Interview the user relentlessly about every aspect of this plan until you reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one. **Ask exactly one question at a time to keep the focus sharp.**
 
-3. **Module Gathering**: Generate the major modules you will need to build or modify to complete the implementation. Actively look for opportunities to extract deep modules that can be tested in isolation. A deep module (as opposed to a shallow module) is one which encapsulates a lot of functionality in a simple, testable interface which rarely changes. **Ask the user if these modules match their expectations**.
+3. **Core Modules Identification**: Identify and create the major modules you will need to build or modify to complete the implementation of the feature / project or idea. Actively look for opportunities to extract deep modules that can be tested in isolation. A deep module (as opposed to a shallow module) is one which encapsulates a lot of functionality in a single, simple, testable interface which rarely changes. **When identifying and generating the core modules, always read `docs/DOC-terms.md`, `docs/DOC-actors.md`, `docs/DOC-personas.md`, and existing PRDs in the `@docs` folder (if they exist) to anchor your understanding and improve context gathering**. **Ask the user if these modules match their expectations**.
 
 4. **System Design**: Propose a "Documentation Package" including:
    - **Modules**: Outline the major modules needed to build or modify to complete the implementation (from the Module Gathering phase)
@@ -24,8 +24,11 @@ compatibility: Universal
 
 5. **Drafting**: Save the PRD to `docs/PRD-<numbered-sequence>-feature-title.md` using the template below. **If this is the first PRD, use `PRD-001-feature-title.md` numbered sequence. For every new PRD added or created, increment the sequence number, e.g. PRD-002-feature-title.md, PRD-003-feature-title.md and so on**
 
-<prd-template>
+**Do NOT ask the user to commit the PRD to git / source control**
 
+**Do NOT ask the user to proceed to implement the feature**
+
+````markdown
 ## Problem Statement
 
 The user's pain point and the "why" behind this feature.
@@ -52,11 +55,25 @@ This list of user stories should be extremely extensive and cover all aspects of
 
 ## Implementation Decisions
 
-- **Architecture**: Module boundaries, data flow, and key interfaces.
-- **Diagrams**: Embedded Mermaid visuals.
-- **Constraints**: Security, performance, or schema requirements.
+### Core Modules
 
-Do NOT include specific code snippets or file paths.
+{ Document the the modules that will be built/modified (list the core deep/shallow modules identified), The interfaces of those modules that will be modified, Module boundaries, bullet point description high level workings, state transitions, integration points, related features or links to existing PRDs }
+
+**Always document a list of modules that will be built/modified**
+
+### Architecture
+
+{ Document architectural decisions, data flow, API contracts, Technical clarifications from the developer, Specific interactions, and key interfaces }
+
+### {state / sequence diagrams}
+
+{ Include the generated state / sequence mermaid diagrams and visuals }
+
+### Constraints
+
+{ Outline any Security, performance, or schema requirements }
+
+**Do NOT include specific code snippets or file paths.**
 
 ## Risks & Assumptions
 
@@ -74,4 +91,7 @@ Any additional context or future considerations.
 
 Links to existing PRDs that this document depends on or interacts with.
 
-</prd-template>
+```
+
+```
+````
