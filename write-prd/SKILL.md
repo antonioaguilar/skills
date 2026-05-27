@@ -98,5 +98,5 @@ Any additional context or future considerations. Put "None" if there aren't any 
 
 ## Related PRDs
 
-Links to existing PRDs that this document depends on or interacts with.
+List and add markdown links to existing PRDs that this document depends on or interacts with.
 </prd-template>
