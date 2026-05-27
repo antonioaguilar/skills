@@ -22,7 +22,7 @@ compatibility: Universal
      - Goals & Frustrations: The user's primary objectives and the "pain points" or obstacles that block them from succeeding.
      - Quotes: A short, impactful statement that summarizes the persona's core mindset.
 
-5. **Drafting**: Save the PRD to `docs/PRD-XXX-feature-title.md` using the template below.
+5. **Drafting**: Save the PRD to `docs/PRD-<numbered-sequence>-feature-title.md` using the template below. **If this is the first PRD, use `PRD-001-feature-title.md` numbered sequence. For every new PRD added or created, increment the sequence number, e.g. PRD-002-feature-title.md, PRD-003-feature-title.md and so on**
 
 <prd-template>
 
