@@ -67,9 +67,10 @@ This list of user stories should be extremely extensive and cover all aspects of
 
 { Document architectural decisions, data flow, API contracts, Technical clarifications from the developer, Specific interactions, and key interfaces }
 
-### {state / sequence diagrams}
+### {section title: use state or sequence diagram}
 
 { Include the generated state / sequence mermaid diagrams and visuals }
+{ Ensure the generated diagram type matches the title of this section }
 
 ### Constraints
 
