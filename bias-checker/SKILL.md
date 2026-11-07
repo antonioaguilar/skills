@@ -14,6 +14,7 @@ This skill analyzes a piece of text, phrase, or prompt to identify cognitive bia
     - Examine the provided text for cognitive biases listed in [biases.md](references/biases.md).
     - Identify specific sentences, locations, or phrases that trigger each bias.
     - For each identified bias, determine its description, explanation, and implications.
+    - For each trigger, write a corrected version of the phrase or sentence that removes the bias while preserving the author's intent.
 3.  **Reporting**: Generate a report in the specified markdown format.
 
 ## Reference Material
@@ -45,7 +46,23 @@ We found N biases in the {text / paragraph / prompt / information / document} yo
 
 **Implications**: {implications and consequences of the bias}
 
+**Correction**:
+
+> **Original**: {the exact phrase or sentence that triggered the bias}
+>
+> **Corrected**: {the rephrased phrase or sentence with the bias removed}
+
+**Why this works**: {brief explanation of how the rephrasing removes or mitigates the bias}
+
 **Further Reading**: {link / URL to the bias}
+
+## Corrected Text
+
+{the full original text rewritten with all corrections applied}
+
+### Placeholders to fill in
+
+- `{placeholder}`: {what information is needed and where the user can find it}
 ```
 
 ### Notes for the Agent:
@@ -54,3 +71,8 @@ We found N biases in the {text / paragraph / prompt / information / document} yo
 - Replace `short-title` in the filename with a slugified version of the report's short description.
 - Ensure each bias entry in the list includes a direct link to its specific page on The Decision Lab if possible (usually `https://thedecisionlab.com/biases/` followed by the hyphenated bias name).
 - If multiple biases are found, list them all.
+- The **Original** in each correction must quote the trigger verbatim so the user can locate it in their text.
+- Corrections must keep the author's meaning and intent; change only what is needed to remove the bias (e.g., replace absolute claims with qualified ones, add missing evidence or alternatives, neutralize loaded language). Do not invent facts.
+- If a correction needs information not present in the original text (numbers, dates, names, data sources, criteria), insert a placeholder in the form `{what's needed, where to get it}` instead of inventing a value. Never refer to content that does not exist in the text (e.g., "the criteria below").
+- List every placeholder under **Placeholders to fill in** at the end of the report. If no corrections need placeholders, omit that subsection.
+- If one sentence triggers several biases, the **Corrected Text** section must apply all of their corrections together so the final text is consistent.
